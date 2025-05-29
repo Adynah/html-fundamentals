@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Registration form</title>
+</head>
+<body>
+    <h1>Dyna Rose Library</h1>
+    <h3>Complete the form to signin</h3>
+    <form action="submit-form" method="post">
+       <p>
+           <label for="username">Username (6-8 charcters):</label>
+           <input type="text" id="username" name="username" required minlength="6" maxlength="8" placeholder="username">
+        </p>
+        <p>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required minlength="8" placeholder="Abcdefgh">
+        </p>
+        <p>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="example@domain.com">
+        </p>
+        <p>
+            <label for="age">Enter your age:</label>
+            <input type="number" id="age" name="age" optional min="16" max="40">
+        </p>        
+        <p>
+            <label for="terms">Terms of Service</label>
+            <!-- I agree to the <a href="/terms-of-service.html" target="_blank">Terms of Service</a> -->
+            <input type="checkbox" name="terms" required>
+        <p>
+            <button type="submit">Submit</button>
+        </p>
+    </form>
+</body>
+</html>
